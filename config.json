@@ -1,0 +1,6 @@
+{
+  "forbidden_chars": "lI1O0o",
+  "include_guid": true,
+  "min_length": 10,
+  "special_symbols": "!@#$%^&*"
+}
