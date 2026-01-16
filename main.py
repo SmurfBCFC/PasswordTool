@@ -1,3 +1,4 @@
+import datetime
 import pyperclip
 from security_tools.generator import generate_secure_password
 
@@ -57,7 +58,8 @@ def main():
 
         # 4. Copy to clipboard
         pyperclip.copy(password)
-
+        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"\n[Generated at: {current_time}]")
         print("\n" + "-" * 40)
         print(f"✅ SUCCESS!")
         print(f"Your Password: {password}")
